@@ -9,7 +9,6 @@
 body{
     background: url(../imagens/bg.png);
     font-family: Helvetica, "Trebuchet MS", sans-serif;
-    margin: 15px;
 }
 /*==========CONTAINER==========*/
 .container{
@@ -48,7 +47,6 @@ body{
     .container{
         width: 100%;
         display: grid;
-        margin-left: -15px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "header header"
@@ -74,21 +72,21 @@ font-size: 0.7em; border: none;}
 @media screen and (max-width: 700px){
     .header{
         display: grid;
-        width: 100%;
+        width: 97.5%;
         background: url(../imagens/topo-imagem-principal.png) no-repeat;
-        margin-left: -15px;
-        margin-right: -1px;
+        padding: 15px 0;
     }
     .navegacao{
-        width: 100vw;
-        margin-top: 175px;
-        margin-left: -15px;
-        margin-right: -1px;
+        width: 98vw;
+        margin-top: 180px;
         padding: 10px 5px;
         background-color: #e0d493;
     }
     .navegacao02{
         justify-content: space-between;
+    }
+    .navegacao02 img{
+        margin-left: -20px;
     }
 }
 /*==========CONTENT==========*/
@@ -98,10 +96,8 @@ font-size: 0.7em; border: none;}
 .content p + p {margin-top: 10px;}
 @media screen and (max-width: 700px){
     .content{
-        width: 100%;
+        width: 97.5%;
         margin-top: -15px;
-        margin-left: -15px;
-        margin-right: -1px;
         padding: 5px;
     }
 }
@@ -123,8 +119,7 @@ hr {border: 1px solid #f3efcb; width: 540px; margin-left: 10px;}
 .aside02 p {color: #000; font-size: 0.8em; text-align: justify;}
 @media screen and (max-width: 700px){
     .aside{
-        width: 100%;
-        margin-left: -15px;
+        width: 97.5%;
         padding: 5px;
     }
     .aside a{
@@ -151,7 +146,6 @@ hr {border: 1px solid #f3efcb; width: 540px; margin-left: 10px;}
 .footer {background: #fff url(../imagens/bg-rodape.png) repeat-x top; padding: 16px; color: #7d7640; text-align: center;}
 @media screen and (max-width: 700px){
     .footer{
-        width: 100%;
-        margin-left: -15px;
+        width: 97.5%;
     }
 }
