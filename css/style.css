@@ -44,6 +44,23 @@ body{
     .aside {grid-area: aside;}
     .footer {grid-area: footer;}
 }
+@media screen and (min-width: 701px) and (max-width: 1200px){
+    .container{
+        width: 100%;
+        display: grid;
+        margin-left: -15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "content aside"
+        "footer footer"
+        ;
+    }
+    .header {grid-area: header;}
+    .content {grid-area: content;}
+    .aside {grid-area: aside;}
+    .footer {grid-area: footer;}
+}
 /*==========HEADER==========*/
 .header {background: url(../imagens/topo-imagem-lateral.png) no-repeat right top, url(../imagens/topo-imagem-principal.png) no-repeat; display: flex; justify-content: space-between; padding: 15px;}
 .navegacao01 {display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #b5ab56;
@@ -57,14 +74,16 @@ font-size: 0.7em; border: none;}
 @media screen and (max-width: 700px){
     .header{
         display: grid;
-        width: 100vw;
+        width: 100%;
         background: url(../imagens/topo-imagem-principal.png) no-repeat;
         margin-left: -15px;
+        margin-right: -1px;
     }
     .navegacao{
         width: 100vw;
         margin-top: 175px;
         margin-left: -15px;
+        margin-right: -1px;
         padding: 10px 5px;
         background-color: #e0d493;
     }
@@ -79,10 +98,16 @@ font-size: 0.7em; border: none;}
 .content p + p {margin-top: 10px;}
 @media screen and (max-width: 700px){
     .content{
-        width: 100vw;
-        margin-left: -15px;
+        width: 100%;
         margin-top: -15px;
+        margin-left: -15px;
+        margin-right: -1px;
         padding: 5px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 1200px){
+    .content{
+        width: 50vw;
     }
 }
 /*==========ASIDE==========*/
@@ -98,7 +123,7 @@ hr {border: 1px solid #f3efcb; width: 540px; margin-left: 10px;}
 .aside02 p {color: #000; font-size: 0.8em; text-align: justify;}
 @media screen and (max-width: 700px){
     .aside{
-        width: 100vw;
+        width: 100%;
         margin-left: -15px;
         padding: 5px;
     }
@@ -114,11 +139,19 @@ hr {border: 1px solid #f3efcb; width: 540px; margin-left: 10px;}
         margin-left: -5px;
     }
 }
+@media screen and (min-width: 701px) and (max-width: 1200px){
+    .aside{
+        width: 50vw;
+    }
+    hr{
+        width: 45vw;
+    }
+}
 /*==========FOOTER==========*/
 .footer {background: #fff url(../imagens/bg-rodape.png) repeat-x top; padding: 16px; color: #7d7640; text-align: center;}
 @media screen and (max-width: 700px){
     .footer{
-        width: 100vw;
+        width: 100%;
         margin-left: -15px;
     }
 }
